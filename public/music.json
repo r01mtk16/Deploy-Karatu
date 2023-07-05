@@ -1,0 +1,32 @@
+[
+    {
+        "id":0,
+        "Genre": "Country",
+        "Artist":"Kenny",
+        "Album":"Gambler",
+        "Year":"2015",
+        "Review":"Absolutely amazing",
+        "ArtistImage" : "https://upload.wikimedia.org/wikipedia/en/2/25/TheGamblerAlbumCover.jpg"
+    },
+
+    {
+        "id":1,
+        "Genre": "Gospel",
+        "Artist":"LeBlanc",
+        "Album":"Above All",
+        "Year":"1995",
+        "Review":"Soul lifting",
+        "ArtistImage" : "https://i.discogs.com/RwmUi_TpRFwoiMKRmuLFjk6fCGu3QCaZoNHwpxS4lyw/rs:fit/g:sm/q:90/h:598/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEzNjc1/NDM3LTE1NTg3OTYx/NDktODQ5Ny5qcGVn.jpeg"
+    },
+
+    {
+        "id":2,
+        "Genre": "Ragae",
+        "Artist":"Marley",
+        "Album":"Natural Mystic",
+        "Year":"1985",
+        "Review":"Inspirational",
+        "ArtistImage" : "http://3.bp.blogspot.com/-SQqfmkiSmf8/TdWJj5JcSxI/AAAAAAAAAIU/sCD3eIUJ-PU/s1600/album-Natural-Mystic-New-Packaging.jpg"
+    }
+
+]

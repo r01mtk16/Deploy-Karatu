@@ -1,0 +1,397 @@
+<!DOCTYPE html> 
+
+<html lang="en"> 
+
+	<head> 
+
+		<meta charset="utf-8"> <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags  --> 
+		<!-- https://aceexterminating.net/wp-content/uploads/2019/07/bigstock-171338474-1024x680.jpg -->
+        <!-- style="float:center;width:800px;height:250px;" <a class="adj" href="myMusic1.html">|Home|</a>
+        <a class="adj" href="albums.html">My Albums|</a>
+        <a id="adj" href="aboutme.html">Contact Me|</a>
+	    <title>Starlings Music Incorporated</title> -->
+        
+        <link rel="stylesheet" type="text/css" href="./CSS/style.css">
+
+        <style>
+
+                body {
+                    background: #3a12f007;
+                    font-family: congenial;
+                    margin: 25px 400px 25px 400px;
+                }
+
+                h1, h2 {
+                    
+                    color:#ff0000;
+                    font-size: 24px;
+                    font-family: calibri;
+                    text-align: center;
+                }
+
+                a {
+                    color: #e5ff00;
+                    text-decoration: yellowgreen;
+                    font-size: 24px;
+                    
+                }
+
+                p {
+                    color: #0000FF;
+                    font-size: 18px;
+                    font-family: 'Courier New', Courier, monospace;
+                    margin: 25px 100px 25px 100px;	
+                }
+
+
+                table, th, td {
+                border:2px solid black;
+                
+                width: 800px;
+                padding: 5px;
+                vertical-align: middle;
+                
+                }
+
+                img {
+                    padding: 40px;
+                    text-align: center;
+                    
+                    float:center;
+                    width:800px;
+                    height:200px;
+
+                }
+
+                th{
+
+                    background-color: green;
+                }
+
+                #myHeader {
+                background-color: skyblue;
+                color: black;
+                padding: 40px;
+                text-align: center;
+                width: 725px;
+                display: table-cell;
+                
+                } 
+
+                div{
+                    display: flexbox;
+                    margin: 25px 100px 25px 100px;
+                }
+
+
+                input{
+                    
+                }
+
+
+                .btn{
+                    padding: 10px;
+                    color: white;
+                }
+
+                .btn-1{ background-color: yellow}
+                .btn-2{ background-color: greenyellow}
+                .btn-3{ background-color: orange}
+
+
+
+                #margin{
+                border: 5px solid blue;
+                margin: 25px 50px 25px 50px;
+                }
+
+                #parent{
+                border: 5px solid green;
+                margin-left: 50px;
+                }
+
+
+                #child{
+                margin-left: inherit;
+                }
+
+                #mBwSolid{
+                border-style:solid;
+                border-color: red;
+                border-width:20px 10px 4px 30px;
+                }
+
+                #dotB{
+                    border-style: dotted;
+                    border-color: red;
+                }
+                #dashB{	
+                    border-style: dashed;
+                    border-color: green;
+                }
+                #solidB{
+                    border-style: solid;
+                    border-color: black;
+                }
+                #dblB{
+                    border-style: double;
+                    border-color: purple;
+                }
+
+                #sDotB{
+                    border-style: dotted;
+                    border-color: red;
+                    border-width: 1px;
+                }
+
+                #lDotB{
+                    border-style: dotted;
+                    border-color: red;
+                    border-width: 10px;
+                }
+
+                #FourDiffSides{
+                border-top-style: dashed;
+                border-left-style: solid;
+                border-bottom-style: dotted;
+                border-right-style: double;
+                }
+
+                #rounded{
+                border: 5px solid blue;
+                border-radius: 10px;
+                }
+
+                #inSpace{
+                    padding: 50px;
+                }
+
+                /*Descendants Selector in CSS files */
+
+                .dSel li{
+                    color: #aaefff;
+                    opacity: 1;
+                    
+                }
+
+                /*Child Selector > in CSS files */
+                .cSel > li {
+                color: green;
+                    opacity: 1;
+                    margin: 25px 100px 25px 100px;
+                }
+
+                /*adjacent sibling selector + in CSS files */
+                .adj + p{
+                color: orange;
+                margin: 25px 50px 25px 50px;
+                }
+
+                .adj + a{
+                color: orange;
+                
+                }
+
+
+                /*general sibling selector ~ in CSS files */
+
+                .gen ~ p{
+                color: violet;
+                }
+
+                /*Pseudo classes*/
+
+                .psDiv{
+                background-color: blue;
+                color: white;
+                padding: 50px;
+                width: 150px;
+                }
+
+                .psDiv:hover{
+                        background-color: aquamarine;
+                        color: yellow;
+                }
+
+                /*Pseudo classes Links Examples*/
+
+                #myLink:link{
+                    color: teal;
+                    font-size: 16px;
+                }
+
+                #myLink:visited{
+                    color: red;
+                }
+
+                #myLink:hover{
+                    background:blue;
+                    color: white;
+                }
+
+                #myLink:active{
+                    background-color: green;
+                    color:yellow;
+                }
+
+                /*Pseudo classes – Focus example*/
+
+                #fId:focus{
+                    background-color: black;
+                    color:white;
+                }
+
+                /*Pseudo elements – first-line example*/
+
+                .fL::first-line{
+                    color:red;
+                }
+
+                /*CSS Float property - left, right, and none*/
+
+                .theContainer{
+                    border: solid 5px green;
+                    width:  450px;
+                    min-height: 175px;
+                    padding: 5px;
+                    margin:5px;
+                    overflow: auto;
+                }
+
+                .greenBoxR{
+                    float:none;
+                    margin: 5px;
+                    width: 150px;
+                    height:80px;
+                    padding: 5px;
+                    margin:5px;
+                    background-color: green;
+
+                }
+
+                /*CSS Float property - clear*/
+                .floatL{
+                    float:left;
+                    margin: 5px;
+                    width: 150px;
+                    height:80px;
+                    background-color: black;
+                }
+                .stillFloat{
+                    border: solid 5px orange;
+                    width:400px;
+                    margin: 5px;
+                            
+                }
+
+                /*CSS- Clear float */
+
+                .floatL{
+                    float:left;
+                    margin: 5px;
+                    width: 150px;
+                    height:80px;
+                    border: solid 5px red;
+
+                }
+
+                .clearFloat{
+                        width:400px;
+                        clear:left;
+                        border: solid 5px orange;	
+                }
+                /*
+                .imgL{
+
+                    image-rendering:  src="UoA_Logo.jpg" alt="uoalogo";
+                }
+                */
+
+                /*CSS - display Inline*/
+                .dspInline li{
+                    display: inline;
+                    color: blue;
+                }
+
+                /*CSS - display block
+                #dspB{
+                    display: block;
+                    background-color: blue;
+                    color: white;
+                }
+                */
+                /*CSS- center align block element */
+
+                #alignCt{
+                    display:block;
+                    border: solid 5px blue;
+                    margin: auto;
+                    text-align: center;
+                    height: 50px;
+                    width: 150px;
+                }
+
+                /*CSS- right align image*/
+
+                #rImg{
+                    position: absolute;
+                    left:0px;
+                }
+
+                #lImg{
+                    position: absolute;
+                    left:0px;
+                }
+
+                vHcen{
+                    border: solid 5px green;
+                    padding: 25px 0;
+                    text-align: center;
+                    height: 50px;
+                    width: 250px;
+                }
+        </style>
+	</head> 
+
+	<body> 
+            <a class="adj" href="myMusic1.html">|Home|</a>
+            <a class="adj" href="albums.html">My Albums|</a>
+            <a id="adj" href="aboutme.html">About Me|</a>
+        <center>
+		<img  id="img" src="./img/soundofmusic.png" alt="Music">
+
+            <div>
+                <h1 id="myHeader">My Taste in Music</h1>
+                <p> 
+                    I have an impecable taste for country, ragae, and gospel music. These kinds of music inspire me and uplift my spirit.
+                     Country music for example, makes me reflect about life and the plans for my future and the future of my children. 
+                     Ragae music on the one hand, encourages me to move on in life against all odds.
+                     Gospel music, helps me reflect on my relationship with God, and the need to show love to this dying world. 
+                     The world needs of love now, more than ever.
+                </p>
+                    <a style="margin: 25px 100px 25px 100px" id="myLink" href="https://www.bing.com/videos/search?q=kenny+rogers&qpvt=kenny+rogers&view=detail&mid=678AAEA6A5982EF8F737678AAEA6A5982EF8F737&&FORM=VRDGAR&ru=%2Fvideos%2Fsearch%3Fq%3Dkenny%2Brogers%26qpvt%3Dkenny%2Brogers%26FORM%3DVDRE">Kenny Rogers</a>
+                   <br>
+                    <a style="margin: 25px 100px 25px 100px" id="myLink" href="https://www.youtube.com/watch?v=Gj9holHsi90" >Bob Marley and the Wailers</a>
+                    <br>
+                    <a style="margin: 25px 100px 25px 100px" id="myLink" href="https://www.youtube.com/watch?v=0oGvAZOnN2g">Lenny LeBlanc</a>
+            </div>
+        
+            <div id="cSel">
+                <h2 id="myHeader"> My Favourite Music Albums</h2>
+                
+                <ul id="myHeader"> 
+                    <li>The Gambler</li>
+                    <li>Natural Mystic</li>
+                    <li>Above All</li>
+                </ul>
+             </div>
+            
+                <div> 
+                    <iframe width="460" height="265" src="https://www.youtube.com/embed/0oGvAZOnN2g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+            </center>
+	</body> 
+</html>

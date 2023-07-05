@@ -1,0 +1,423 @@
+<!DOCTYPE html> 
+
+<html lang="en"> 
+
+	<head> 
+
+		<meta charset="utf-8"> <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags  --> 
+		<!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script> <a class="adj" href="myMusic1.html">|Home|</a>
+        <a class="adj" href="albums.html">My Albums|</a>
+        <a id="adj" href="aboutme.html">Contact Me|</a>-->
+	    
+	    <title>Contact Me</title> 
+        <link rel="stylesheet" type="text/css" href="CSS/my_css.css"/>
+
+        <style>
+
+            body {
+                background: #3a12f007;
+                font-family: congenial;
+                margin: 25px 400px 25px 400px;
+            }
+
+            h1, h2 {
+                
+                color:#ff0000;
+                font-size: 24px;
+                font-family: calibri;
+                text-align: center;
+            }
+
+            a {
+                color: #e5ff00;
+                text-decoration: yellowgreen;
+                font-size: 24px;
+                
+            }
+
+            p {
+                color: #0000FF;
+                font-size: 18px;
+                font-family: 'Courier New', Courier, monospace;
+                margin: 25px 100px 25px 100px;	
+            }
+
+
+            table, th, td {
+            border:2px solid black;
+            
+            width: 800px;
+            padding: 5px;
+            vertical-align: middle;
+            
+            }
+
+            img {
+                padding: 40px;
+                text-align: center;
+                
+                float:center;
+                width:800px;
+                height:200px;
+
+            }
+
+            th{
+
+                background-color: green;
+            }
+
+            #myHeader {
+            background-color: skyblue;
+            color: black;
+            padding: 40px;
+            text-align: center;
+            width: 725px;
+            display: table-cell;
+            
+            } 
+
+            div{
+                display: flexbox;
+                margin: 25px 100px 25px 100px;
+            }
+
+
+            input{
+                
+            }
+
+
+            .btn{
+                padding: 10px;
+                color: white;
+            }
+
+            .btn-1{ background-color: yellow}
+            .btn-2{ background-color: greenyellow}
+            .btn-3{ background-color: orange}
+
+
+
+            #margin{
+            border: 5px solid blue;
+            margin: 25px 50px 25px 50px;
+            }
+
+            #parent{
+            border: 5px solid green;
+            margin-left: 50px;
+            }
+
+
+            #child{
+            margin-left: inherit;
+            }
+
+            #mBwSolid{
+            border-style:solid;
+            border-color: red;
+            border-width:20px 10px 4px 30px;
+            }
+
+            #dotB{
+                border-style: dotted;
+                border-color: red;
+            }
+            #dashB{	
+                border-style: dashed;
+                border-color: green;
+            }
+            #solidB{
+                border-style: solid;
+                border-color: black;
+            }
+            #dblB{
+                border-style: double;
+                border-color: purple;
+            }
+
+            #sDotB{
+                border-style: dotted;
+                border-color: red;
+                border-width: 1px;
+            }
+
+            #lDotB{
+                border-style: dotted;
+                border-color: red;
+                border-width: 10px;
+            }
+
+            #FourDiffSides{
+            border-top-style: dashed;
+            border-left-style: solid;
+            border-bottom-style: dotted;
+            border-right-style: double;
+            }
+
+            #rounded{
+            border: 5px solid blue;
+            border-radius: 10px;
+            }
+
+            #inSpace{
+                padding: 50px;
+            }
+
+            /*Descendants Selector in CSS files */
+
+            .dSel li{
+                color: #aaefff;
+                opacity: 1;
+                
+            }
+
+            /*Child Selector > in CSS files */
+            .cSel > li {
+            color: green;
+                opacity: 1;
+                margin: 25px 100px 25px 100px;
+            }
+
+            /*adjacent sibling selector + in CSS files */
+            .adj + p{
+            color: orange;
+            margin: 25px 50px 25px 50px;
+            }
+
+            .adj + a{
+            color: orange;
+            
+            }
+
+
+            /*general sibling selector ~ in CSS files */
+
+            .gen ~ p{
+            color: violet;
+            }
+
+            /*Pseudo classes*/
+
+            .psDiv{
+            background-color: blue;
+            color: white;
+            padding: 50px;
+            width: 150px;
+            }
+
+            .psDiv:hover{
+                    background-color: aquamarine;
+                    color: yellow;
+            }
+
+            /*Pseudo classes Links Examples*/
+
+            #myLink:link{
+                color: teal;
+                font-size: 16px;
+            }
+
+            #myLink:visited{
+                color: red;
+            }
+
+            #myLink:hover{
+                background:blue;
+                color: white;
+            }
+
+            #myLink:active{
+                background-color: green;
+                color:yellow;
+            }
+
+            /*Pseudo classes – Focus example*/
+
+            #fId:focus{
+                background-color: black;
+                color:white;
+            }
+
+            /*Pseudo elements – first-line example*/
+
+            .fL::first-line{
+                color:red;
+            }
+
+            /*CSS Float property - left, right, and none*/
+
+            .theContainer{
+                border: solid 5px green;
+                width:  450px;
+                min-height: 175px;
+                padding: 5px;
+                margin:5px;
+                overflow: auto;
+            }
+
+            .greenBoxR{
+                float:none;
+                margin: 5px;
+                width: 150px;
+                height:80px;
+                padding: 5px;
+                margin:5px;
+                background-color: green;
+
+            }
+
+            /*CSS Float property - clear*/
+            .floatL{
+                float:left;
+                margin: 5px;
+                width: 150px;
+                height:80px;
+                background-color: black;
+            }
+            .stillFloat{
+                border: solid 5px orange;
+                width:400px;
+                margin: 5px;
+                        
+            }
+
+            /*CSS- Clear float */
+
+            .floatL{
+                float:left;
+                margin: 5px;
+                width: 150px;
+                height:80px;
+                border: solid 5px red;
+
+            }
+
+            .clearFloat{
+                    width:400px;
+                    clear:left;
+                    border: solid 5px orange;	
+            }
+            /*
+            .imgL{
+
+                image-rendering:  src="UoA_Logo.jpg" alt="uoalogo";
+            }
+            */
+
+            /*CSS - display Inline*/
+            .dspInline li{
+                display: inline;
+                color: blue;
+            }
+
+            /*CSS - display block
+            #dspB{
+                display: block;
+                background-color: blue;
+                color: white;
+            }
+            */
+            /*CSS- center align block element */
+
+            #alignCt{
+                display:block;
+                border: solid 5px blue;
+                margin: auto;
+                text-align: center;
+                height: 50px;
+                width: 150px;
+            }
+
+            /*CSS- right align image*/
+
+            #rImg{
+                position: absolute;
+                left:0px;
+            }
+
+            #lImg{
+                position: absolute;
+                left:0px;
+            }
+
+            vHcen{
+                border: solid 5px green;
+                padding: 25px 0;
+                text-align: center;
+                height: 50px;
+                width: 250px;
+            }
+    </style>
+	</head> 
+
+	<body> 
+        <a class="adj" href="myMusic1.html">|Home|</a>
+        <a class="adj" href="albums.html">My Albums|</a>
+        <a id="adj" href="aboutme.html">About Me|</a>
+		
+		<img id="img" src="img/soundofmusic.jpg" alt="Music">
+            <br>
+
+            <div>
+                <h1 id="myHeader">Contact Me</h1>
+                <form action="/Practical5/postText.html" method="post">
+                    <fieldset>
+                        <legend>Personal Details:</legend>
+                    <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" size=30 value="Karatu"><br><br>
+                    <label for="email">Email:</label>
+                        <input type="text" id="email" name="email" size=30 value="s04mk1@abdn.ac.uk"><br><br>
+                    <label for="name">Select Gender:</label>
+                        <input type="radio" id="male" name="gender" value="male">
+                            <label for="male">Male</label>
+                        <input type="radio" id="female" name="gender" value="female">
+                            <label for="female">Female</label><br><br>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Message:</legend>
+                    <label for="countryMusic">What kind of music do you like:</label><br><br>
+                        <input type="checkbox" id="countryMusic" name="genre[]" value="countryMusic">Day time friends and Night time lovers<br>
+                        <input type="checkbox" id="ragaeMusic" name="genre[]" value="ragaeMusic">The Buffalon Soldiers<br>
+                        <input type="checkbox" id="gospelMusic" name="genre[]" value="gospelMusic">You came from heaven to earth<br>
+                        <input type="checkbox" id="afroBeats" name="genre[]" value="afroBeats">See my shoulder<br>
+                        <input type="checkbox" id="RyhmeandBlues" name="genre[]" value="RyhmeandBlues" id="myHeader">Lean on me<br><br>
+                    <textarea autofocus name="message" rows="6" cols="40">Put your comments here</textarea><br><br>
+
+                    </fieldset>
+                    <label for="username">User Name:</label>
+                    <input type="hidden" id="username" name="username" size=30 value="123"><br><br>
+                    <input class="btn-2" type="submit" value="SUBMIT">
+                    <input class="btn-1" type="reset" value="RESET">
+                </form> 
+                <center>
+                    <a id="myLink" href="https://www.bing.com/videos/search?q=kenny+rogers&qpvt=kenny+rogers&view=detail&mid=678AAEA6A5982EF8F737678AAEA6A5982EF8F737&&FORM=VRDGAR&ru=%2Fvideos%2Fsearch%3Fq%3Dkenny%2Brogers%26qpvt%3Dkenny%2Brogers%26FORM%3DVDRE">Kenny Rogers</a>
+                   <br>
+                    <a id="myLink" href="https://www.youtube.com/watch?v=Gj9holHsi90" >Bob Marley and the Wailers</a>
+                    <br>
+                    <a id="myLink" href="https://www.youtube.com/watch?v=0oGvAZOnN2g">Lenny LeBlanc</a>
+                </center>
+            </div>
+        
+            <div id="cSel">
+                <h2 id="myHeader"> My Favourite Music Albums</h2>
+                
+                <ul id="myHeader"> 
+                    <li>The Gambler</li>
+                    <li>Natural Mystic</li>
+                    <li>Above All</li>
+                </ul>
+             
+                <div> 
+                    <iframe width="460" height="265" src="https://www.youtube.com/embed/0oGvAZOnN2g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+          
+        
+	</body> 
+</html>

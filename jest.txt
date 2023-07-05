@@ -1,0 +1,6 @@
+npm init -y
+
+npm i --save-dev jest
+
+Goto the package.jason and change the contest of "test" to "jest"
+
